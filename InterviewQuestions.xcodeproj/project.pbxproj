@@ -19,6 +19,10 @@
 		1EA1B5431E770E32000B4384 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92E1AA5718B9034D0006A672 /* Questions.plist */; };
 		1EA1B5441E770E32000B4384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E1AA0918B8F9CE0006A672 /* Main.storyboard */; };
 		1EA1B5451E770E32000B4384 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E1AA5A18B9143E0006A672 /* Default-568h@2x.png */; };
+		1EA1B54F1E772F46000B4384 /* InterviewQuestionsFreeDebug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EA1B54B1E772F46000B4384 /* InterviewQuestionsFreeDebug.plist */; };
+		1EA1B5501E772F46000B4384 /* InterviewQuestionsFreeRelease.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EA1B54C1E772F46000B4384 /* InterviewQuestionsFreeRelease.plist */; };
+		1EA1B5511E772F46000B4384 /* InterviewQuestionsFullDebug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EA1B54D1E772F46000B4384 /* InterviewQuestionsFullDebug.plist */; };
+		1EA1B5521E772F46000B4384 /* InterviewQuestionsFullRelease.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EA1B54E1E772F46000B4384 /* InterviewQuestionsFullRelease.plist */; };
 		92E1A9F818B8F9CE0006A672 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9F718B8F9CE0006A672 /* Foundation.framework */; };
 		92E1A9FA18B8F9CE0006A672 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9F918B8F9CE0006A672 /* CoreGraphics.framework */; };
 		92E1A9FC18B8F9CE0006A672 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1A9FB18B8F9CE0006A672 /* UIKit.framework */; };
@@ -35,12 +39,14 @@
 
 /* Begin PBXFileReference section */
 		1EA1B5491E770E32000B4384 /* InterviewQuestionsFullDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuestionsFullDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EA1B54A1E770E33000B4384 /* InterviewQuestionsFull.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = InterviewQuestionsFull.plist; path = InterviewQuestions/InterviewQuestionsFull.plist; sourceTree = SOURCE_ROOT; };
+		1EA1B54B1E772F46000B4384 /* InterviewQuestionsFreeDebug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterviewQuestionsFreeDebug.plist; sourceTree = "<group>"; };
+		1EA1B54C1E772F46000B4384 /* InterviewQuestionsFreeRelease.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterviewQuestionsFreeRelease.plist; sourceTree = "<group>"; };
+		1EA1B54D1E772F46000B4384 /* InterviewQuestionsFullDebug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterviewQuestionsFullDebug.plist; sourceTree = "<group>"; };
+		1EA1B54E1E772F46000B4384 /* InterviewQuestionsFullRelease.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterviewQuestionsFullRelease.plist; sourceTree = "<group>"; };
 		92E1A9F418B8F9CE0006A672 /* InterviewQuestionsFreeDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuestionsFreeDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E1A9F718B8F9CE0006A672 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		92E1A9F918B8F9CE0006A672 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		92E1A9FB18B8F9CE0006A672 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		92E1A9FF18B8F9CE0006A672 /* InterviewQuestionsFree.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = InterviewQuestionsFree.plist; path = InterviewQuestions/InterviewQuestionsFree.plist; sourceTree = SOURCE_ROOT; };
 		92E1AA0118B8F9CE0006A672 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92E1AA0318B8F9CE0006A672 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92E1AA0518B8F9CE0006A672 /* InterviewQuestions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InterviewQuestions-Prefix.pch"; sourceTree = "<group>"; };
@@ -132,9 +138,11 @@
 		92E1A9FE18B8F9CE0006A672 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1EA1B54B1E772F46000B4384 /* InterviewQuestionsFreeDebug.plist */,
+				1EA1B54C1E772F46000B4384 /* InterviewQuestionsFreeRelease.plist */,
+				1EA1B54D1E772F46000B4384 /* InterviewQuestionsFullDebug.plist */,
+				1EA1B54E1E772F46000B4384 /* InterviewQuestionsFullRelease.plist */,
 				92E1AA4A18B8FFF10006A672 /* Images */,
-				92E1A9FF18B8F9CE0006A672 /* InterviewQuestionsFree.plist */,
-				1EA1B54A1E770E33000B4384 /* InterviewQuestionsFull.plist */,
 				92E1AA5718B9034D0006A672 /* Questions.plist */,
 				92E1AA0018B8F9CE0006A672 /* InfoPlist.strings */,
 				92E1AA0318B8F9CE0006A672 /* main.m */,
@@ -254,9 +262,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA1B5501E772F46000B4384 /* InterviewQuestionsFreeRelease.plist in Resources */,
+				1EA1B54F1E772F46000B4384 /* InterviewQuestionsFreeDebug.plist in Resources */,
 				92E1AA0218B8F9CE0006A672 /* InfoPlist.strings in Resources */,
+				1EA1B5521E772F46000B4384 /* InterviewQuestionsFullRelease.plist in Resources */,
 				92E1AA5018B900060006A672 /* Icon@2x.png in Resources */,
 				92E1AA4F18B900060006A672 /* Default@2x.png in Resources */,
+				1EA1B5511E772F46000B4384 /* InterviewQuestionsFullDebug.plist in Resources */,
 				92E1AA5818B9034D0006A672 /* Questions.plist in Resources */,
 				92E1AA0B18B8F9CE0006A672 /* Main.storyboard in Resources */,
 				92E1AA5E18B9147E0006A672 /* Default-568h@2x.png in Resources */,
@@ -315,6 +327,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)$(CONFIGURATION).plist";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -325,6 +338,7 @@
 				DEVELOPMENT_TEAM = MMMJR6XCK4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)$(CONFIGURATION).plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arrisi.$(TARGET_NAME)";
 				PRODUCT_NAME = "Interview Questions";
 				WRAPPER_EXTENSION = app;
@@ -426,6 +440,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)$(CONFIGURATION).plist";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -436,6 +451,7 @@
 				DEVELOPMENT_TEAM = MMMJR6XCK4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)$(CONFIGURATION).plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arrisi.$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
