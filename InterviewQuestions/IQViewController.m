@@ -44,10 +44,32 @@
 #pragma mark - Private
 
 - (void)setupQuiz {
-  self.navigationItem.title = @"Free Version";
-  self.maxAllowedQuestions = 5;
-  [self setupAds];
-  
+#ifdef FREE
+    #ifdef DEBUG
+        self.maxAllowedQuestions = 2;
+        self.navigationItem.title = @"Free Debug 2";
+    #else
+        self.navigationItem.title = @"Free Release 5";
+        self.maxAllowedQuestions = 5;
+    #endif
+    [self setupAds];
+#else
+    self.skipQuestionButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [self.skipQuestionButton setFrame:CGRectMake(20, 80, 100, 44)];
+    [self.skipQuestionButton setTitle:@"Skip Question" forState:UIControlStateNormal];
+    [self.skipQuestionButton addTarget:self
+                                action:@selector(skipButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.skipQuestionButton];
+    #ifdef DEBUG
+        self.navigationItem.title = @"Full Debug 7";
+        self.maxAllowedQuestions = 7;
+    #else
+        self.navigationItem.title = @"Full Release 10";
+            self.maxAllowedQuestions = 10;
+    #endif
+#endif
+
   NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"Questions" ofType:@"plist"];
   self.questions = [NSArray arrayWithContentsOfFile:plistPath];
   self.currentQuestionIndex = 0;
@@ -84,6 +106,17 @@
 }
 
 - (void)skipButtonPressed {
+    //1
+    self.score++;
+    self.scoreLabel.text = [NSString stringWithFormat:@"%1d",(long)self.score];
+    
+    //2
+    self.currentQuestionIndex++;
+    [self showNextQuestion];
+    
+    //3
+    self.skipQuestionButton.hidden = YES;
+    
 }
 
 #pragma mark - UIAlertViewDelegate
