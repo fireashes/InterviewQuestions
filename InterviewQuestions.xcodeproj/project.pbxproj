@@ -38,12 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1EA1B5491E770E32000B4384 /* InterviewQuestionsFullDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuestionsFullDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA1B5491E770E32000B4384 /* IQ D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IQ D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA1B54B1E772F46000B4384 /* InterviewQuestionsFreeDebug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterviewQuestionsFreeDebug.plist; sourceTree = "<group>"; };
 		1EA1B54C1E772F46000B4384 /* InterviewQuestionsFreeRelease.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterviewQuestionsFreeRelease.plist; sourceTree = "<group>"; };
 		1EA1B54D1E772F46000B4384 /* InterviewQuestionsFullDebug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterviewQuestionsFullDebug.plist; sourceTree = "<group>"; };
 		1EA1B54E1E772F46000B4384 /* InterviewQuestionsFullRelease.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterviewQuestionsFullRelease.plist; sourceTree = "<group>"; };
-		92E1A9F418B8F9CE0006A672 /* InterviewQuestionsFreeDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewQuestionsFreeDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E1A9F418B8F9CE0006A672 /* IQ Free D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IQ Free D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E1A9F718B8F9CE0006A672 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		92E1A9F918B8F9CE0006A672 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		92E1A9FB18B8F9CE0006A672 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -105,8 +105,8 @@
 		92E1A9F518B8F9CE0006A672 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92E1A9F418B8F9CE0006A672 /* InterviewQuestionsFreeDebug.app */,
-				1EA1B5491E770E32000B4384 /* InterviewQuestionsFullDebug.app */,
+				92E1A9F418B8F9CE0006A672 /* IQ Free D.app */,
+				1EA1B5491E770E32000B4384 /* IQ D.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 			);
 			name = InterviewQuestionsFull;
 			productName = InterviewQuestions;
-			productReference = 1EA1B5491E770E32000B4384 /* InterviewQuestionsFullDebug.app */;
+			productReference = 1EA1B5491E770E32000B4384 /* IQ D.app */;
 			productType = "com.apple.product-type.application";
 		};
 		92E1A9F318B8F9CE0006A672 /* InterviewQuestionsFree */ = {
@@ -204,7 +204,7 @@
 			);
 			name = InterviewQuestionsFree;
 			productName = InterviewQuestions;
-			productReference = 92E1A9F418B8F9CE0006A672 /* InterviewQuestionsFreeDebug.app */;
+			productReference = 92E1A9F418B8F9CE0006A672 /* IQ Free D.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -328,6 +328,7 @@
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)$(CONFIGURATION).plist";
+				PRODUCT_NAME = "IQ D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -441,6 +442,7 @@
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)$(CONFIGURATION).plist";
+				PRODUCT_NAME = "IQ Free D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -453,7 +455,7 @@
 				GCC_PREFIX_HEADER = "InterviewQuestions/InterviewQuestions-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)$(CONFIGURATION).plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arrisi.$(TARGET_NAME)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "IQ Free";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
